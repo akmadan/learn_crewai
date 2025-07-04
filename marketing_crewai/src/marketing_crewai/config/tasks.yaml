@@ -1,0 +1,23 @@
+research_task:
+  description: >
+    Conduct a thorough research about marketing content on {topic}
+    Make sure you find any interesting and relevant content ideas given
+    the current year is {current_year}.
+  expected_output: >
+    A markdown with all relevant and engaging content pieces as reference
+  agent: research_agent
+
+writing_task:
+  description: >
+    Write a draft on {topic} based on references captured, with a engaging title and intro.
+  expected_output: >
+    A markdown of the content draft on {topic}
+  agent: writer_agent
+
+
+reviewing_task:
+  description: >
+    Review the content drafted by the writer_agent and try to improve it with suggestions and improvements in a list
+  expected_output: >
+    A markdown file with a list of improvements
+  agent: reviewer_agent

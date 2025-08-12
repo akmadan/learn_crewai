@@ -1,0 +1,23 @@
+[project]
+name = "numbers_api"
+version = "0.1.0"
+description = "numbers_api using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.148.0,<1.0.0"
+]
+
+[project.scripts]
+numbers_api = "numbers_api.main:run"
+run_crew = "numbers_api.main:run"
+train = "numbers_api.main:train"
+replay = "numbers_api.main:replay"
+test = "numbers_api.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

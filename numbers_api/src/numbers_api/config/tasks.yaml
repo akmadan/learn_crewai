@@ -1,0 +1,8 @@
+fact_generator_task:
+  description: >
+    Generate a fact about the number received in the user prompt using the Numbers API.
+    The fact should be interesting and engaging, suitable for sharing.
+    The prompt from the user is {prompt}.
+  expected_output: >
+    Fact about the number in simple string format.
+  agent: fact_generator

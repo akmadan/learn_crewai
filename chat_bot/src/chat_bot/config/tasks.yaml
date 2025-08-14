@@ -1,0 +1,9 @@
+helpful_assistant_task:
+  description: >
+    Task for the Helpful Assistant to assist users with their queries. 
+    The user query is - {question}
+  expected_output: >
+    The Helpful Assistant should provide a detailed and informative response 
+    to the user's query, ensuring that the information is accurate and helpful.
+  agent: helpful_assistant
+
